@@ -1,7 +1,7 @@
 name: webapp-wf-dev
 
 on:
-  workflow_dispatch:
+  push:
 
 permissions:
   id-token: write
@@ -28,4 +28,4 @@ jobs:
         uses: azure/arm-deploy@v1
         with:
           region: centralindia
-          resourceGroupName: projectdev1
+          resourceGroupName: myappresource
