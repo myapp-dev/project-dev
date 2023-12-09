@@ -28,7 +28,6 @@ jobs:
         uses: azure/arm-deploy@v1
         with:
           scope: resourcegroup
-          subscriptionId: 34fe7e89-cd08-4481-acf3-9a0febe17ac0
           region: East US
           resourceGroupName: myappresource
           template: appservice/app-wf.bicep
