@@ -4,10 +4,9 @@ on:
   workflow_dispatch:
 
 env:
-  
-  AZURE_WEBAPP_NAME: wapp-myappbackend   
+  AZURE_WEBAPP_NAME: wapp-myappbackend
   AZURE_WEBAPP_PACKAGE_PATH: devproject
-  NODE_VERSION: '16.x'  
+  NODE_VERSION: '16.x'
 
 permissions:
   id-token: write
@@ -23,8 +22,8 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version:  ${{ env.NODE_VERSION }}
-       
+          node-version: ${{ env.NODE_VERSION }}
+
       - name: Change working directory
         run: cd ${{ github.workspace }}
 
@@ -52,7 +51,7 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-     - name: Azure Login
+      - name: Azure Login
         uses: azure/login@v1
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
