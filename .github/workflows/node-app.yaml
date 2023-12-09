@@ -1,7 +1,7 @@
 name: myapp-wf-dev
 
 on:
-  push:
+  workflow_dispatch:
 
 permissions:
   id-token: write
