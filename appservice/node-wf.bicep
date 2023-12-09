@@ -1,4 +1,4 @@
-param webAppName string = 'myappfrondend' // Generate unique String for web app name
+param webAppName string = 'myappbackend' // Generate unique String for web app name
 param sku string = 'F1' // The SKU of App Service Plan
 param linuxFxVersion string = 'NODE|10.15' // The runtime stack of web app (Node.js 10.15)
 param location string = resourceGroup().location // Location for all resources
