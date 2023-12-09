@@ -30,4 +30,4 @@ jobs:
           scope: resourcegroup
           region: East US
           resourceGroupName: myappresource
-          template: appservice/deploy-java.bicep
+          template: appservice/app-java.bicep
