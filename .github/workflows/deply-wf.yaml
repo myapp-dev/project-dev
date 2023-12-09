@@ -1,7 +1,7 @@
 name: webapp-wf-dev
 
 on:
-  push:
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          path: devProject # Checkout to the root directory
+          path: ./ # Checkout to the root directory
 
       # Use Azure Login Service Connection
       - name: Azure Login
@@ -27,5 +27,8 @@ jobs:
         id: arm
         uses: azure/arm-deploy@v1
         with:
-          region: centralindia
+          scope: resourcegroup
+          subscriptionId: 34fe7e89-cd08-4481-acf3-9a0febe17ac0
+          region: East US
           resourceGroupName: myappresource
+          template: appservice/app-wf.bicep
