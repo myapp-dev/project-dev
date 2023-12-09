@@ -1,4 +1,4 @@
-name: myapp-wf-dev
+name: java-wf-dev
 
 on:
   workflow_dispatch:
