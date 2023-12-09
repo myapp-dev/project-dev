@@ -30,4 +30,4 @@ jobs:
           scope: resourcegroup
           region: East US
           resourceGroupName: myappresource
-          template: appservice/nodewf.bicep
+          template: appservice/node-wf.bicep
