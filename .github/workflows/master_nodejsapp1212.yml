@@ -9,6 +9,10 @@ on:
       - master
   workflow_dispatch:
 
+env:
+  
+  AZURE_WEBAPP_PACKAGE_PATH: devproject  
+
 jobs:
   build:
     runs-on: ubuntu-latest
