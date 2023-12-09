@@ -1,4 +1,4 @@
-name: myapp-webapp-wf-dev
+name: myapp-wf-dev
 
 on:
   workflow_dispatch:
