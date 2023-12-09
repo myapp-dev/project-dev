@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: wapp-myappbackend
+  AZURE_WEBAPP_NAME: wapp-myapp23434
   AZURE_WEBAPP_PACKAGE_PATH: devproject
   NODE_VERSION: '18'
 
